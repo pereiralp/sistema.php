@@ -75,11 +75,11 @@ class Auth extends ShieldAuth
      */
     public array $redirects = [
         'register'          => '/',
-        'login'             => '/',
+        'login'             => 'admin',
         'logout'            => 'login',
-        'force_reset'       => '/',
-        'permission_denied' => '/',
-        'group_denied'      => '/',
+        //'force_reset'       => '/',
+        //'permission_denied' => '/',
+        //'group_denied'      => '/',
     ];
 
     /**
@@ -518,4 +518,6 @@ class Auth extends ShieldAuth
             default                                                               => rtrim(site_url($url), '/ '),
         };
     }
+
+    
 }
